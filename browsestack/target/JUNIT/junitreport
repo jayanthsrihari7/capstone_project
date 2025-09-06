@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="310.39" tests="8" skipped="0" failures="0" errors="0" timestamp="2025-09-06T09:59:51.613942400Z">
+<testcase classname="Signin" name="Successful login with valid credentials" time="33.283">
+<system-out><![CDATA[
+Given user is on the login page.............................................passed
+When user enters valid username and password................................passed
+Then successful login.......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search" name="Search for a product" time="28.969">
+<system-out><![CDATA[
+Given user is on the homepage...............................................passed
+When user searches for product..............................................passed
+Then search results should display products.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="demo Add to Cart" name="Successfully add a product to cart" time="42.702">
+<system-out><![CDATA[
+Given open home page for adding product.....................................passed
+When Search for a product in search bar.....................................passed
+And Add the product to the cart.............................................passed
+Then Successfully added to cart.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Delete from Cart" name="Delete product from cart" time="43.517">
+<system-out><![CDATA[
+Given user has to add product in the cart...................................passed
+When user deletes product from the cart.....................................passed
+Then the product is sucessfully deleted.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Orders" name="View past orders" time="35.715">
+<system-out><![CDATA[
+Given user is logged in.....................................................passed
+When user search and add his products to cart...............................passed
+And click on checkout and enter adress......................................passed
+And navigate to orders page.................................................passed
+Then previous orders should be displayed....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Offers" name="View available offers" time="50.402">
+<system-out><![CDATA[
+Given user should logged in.................................................passed
+When user navigates to the offers page......................................passed
+Then available offers should be displayed...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Favorites" name="Add product to favorites" time="44.168">
+<system-out><![CDATA[
+Given user first logged in..................................................passed
+When user adds product to favorites.........................................passed
+Then product should be visible in favorites.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Signout" name="Successful sign out" time="31.445">
+<system-out><![CDATA[
+Given user first log in.....................................................passed
+When user clicks the sign out button........................................passed
+Then user should be redirected to the login page............................passed
+]]></system-out>
+</testcase>
+</testsuite>
