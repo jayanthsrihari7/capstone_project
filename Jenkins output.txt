@@ -1,0 +1,148 @@
+Started by user Yelisetti Jayanth Srihari
+Running as SYSTEM
+Building in workspace C:\Users\jayan\.jenkins\workspace\capstone
+[capstone] $ cmd /c call C:\Users\jayan\AppData\Local\Temp\jenkins14514349935655588239.bat
+
+C:\Users\jayan\.jenkins\workspace\capstone>cd C:\Users\jayan\Desktop\Java_Selenium\browsestack 
+
+C:\Users\jayan\Desktop\Java_Selenium\browsestack>mvn clean test 
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for Capstone_project:Capstone_project:jar:0.0.1-SNAPSHOT
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.seleniumhq.selenium:selenium-java:jar -> duplicate declaration of version 4.22.0 @ line 71, column 13
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] -----------------< Capstone_project:Capstone_project >------------------
+[INFO] Building Capstone_project 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ Capstone_project ---
+[INFO] Deleting C:\Users\jayan\Desktop\Java_Selenium\browsestack\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ Capstone_project ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ Capstone_project ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ Capstone_project ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 8 resources from src\test\resources to target\test-classes
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ Capstone_project ---
+[INFO] Recompiling the module because of changed source code.
+[WARNING] File encoding has not been set, using platform encoding windows-1252, i.e. build is platform dependent!
+[INFO] Compiling 10 source files with javac [debug target 1.8] to target\test-classes
+[WARNING] bootstrap class path not set in conjunction with -source 8
+[INFO] /C:/Users/jayan/Desktop/Java_Selenium/browsestack/src/test/java/browsestack/TestRunner.java: C:\Users\jayan\Desktop\Java_Selenium\browsestack\src\test\java\browsestack\TestRunner.java uses or overrides a deprecated API.
+[INFO] /C:/Users/jayan/Desktop/Java_Selenium/browsestack/src/test/java/browsestack/TestRunner.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- surefire:3.5.3:test (default-test) @ Capstone_project ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junit4.JUnit4Provider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running browsestack.TestRunner
+
+Scenario: Successful login with valid credentials # file:///C:/Users/jayan/Desktop/Java_Selenium/browsestack/src/test/resources/Features/01signin.feature:3
+Sep 07, 2025 11:28:14 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 140
+Sep 07, 2025 11:28:14 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 140.0.7339.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given user is on the login page               # browsestack.signin.user_is_on_the_login_page()
+  ✔ When user enters valid username and password  # browsestack.signin.user_enters_valid_username_and_password()
+Login successful
+  ✔ Then successful login                         # browsestack.signin.successful_login()
+
+Scenario: Search for a product                  # file:///C:/Users/jayan/Desktop/Java_Selenium/browsestack/src/test/resources/Features/02search.feature:3
+Sep 07, 2025 11:28:25 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 140
+Sep 07, 2025 11:28:25 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 140.0.7339.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given user is on the homepage               # browsestack.search.user_is_on_the_homepage()
+  ✔ When user searches for product              # browsestack.search.user_searches_for_product()
+Search successful!
+  ✔ Then search results should display products # browsestack.search.search_results_should_display_products()
+
+Scenario: Successfully add a product to cart # file:///C:/Users/jayan/Desktop/Java_Selenium/browsestack/src/test/resources/Features/03AddtoCart.feature:2
+Sep 07, 2025 11:28:35 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 140
+Sep 07, 2025 11:28:35 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 140.0.7339.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given open home page for adding product  # browsestack.addtocart.open_home_page()
+  ✔ When Search for a product in search bar  # browsestack.addtocart.search_product()
+  ✔ And Add the product to the cart          # browsestack.addtocart.add_product_to_cart()
+Product added to cart!
+  ✔ Then Successfully added to cart          # browsestack.addtocart.added_to_cart()
+
+Scenario: Delete product from cart            # file:///C:/Users/jayan/Desktop/Java_Selenium/browsestack/src/test/resources/Features/04DeleteFromCart.feature:3
+Sep 07, 2025 11:28:47 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 140
+Sep 07, 2025 11:28:47 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 140.0.7339.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given user has to add product in the cart # browsestack.deletefromcart.user_add_product()
+  ✔ When user deletes product from the cart   # browsestack.deletefromcart.delete_product()
+Product deleted from cart
+  ✔ Then the product is sucessfully deleted   # browsestack.deletefromcart.product_deleted()
+
+Scenario: View past orders                        # file:///C:/Users/jayan/Desktop/Java_Selenium/browsestack/src/test/resources/Features/06orders.feature:3
+Sep 07, 2025 11:29:02 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 140
+Sep 07, 2025 11:29:02 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 140.0.7339.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given user is logged in                       # browsestack.orders.user_is_logged_in()
+  ✔ When user search and add his products to cart # browsestack.orders.user_search_and_add_products()
+  ✔ And click on checkout and enter adress        # browsestack.orders.click_on_checkout_and_enter_adress()
+  ✔ And navigate to orders page                   # browsestack.orders.navigate_to_orders_page()
+Orders displayed successfully
+  ✔ Then previous orders should be displayed      # browsestack.orders.previous_orders_should_be_displayed()
+
+Scenario: View available offers               # file:///C:/Users/jayan/Desktop/Java_Selenium/browsestack/src/test/resources/Features/07offers.feature:3
+Sep 07, 2025 11:29:26 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 140
+Sep 07, 2025 11:29:26 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 140.0.7339.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given user should logged in               # browsestack.offers.user_should_be_logged_in()
+  ✔ When user navigates to the offers page    # browsestack.offers.user_navigates_to_offers()
+Offers displayed successfully
+  ✔ Then available offers should be displayed # browsestack.offers.available_offers_should_be_displayed()
+
+Scenario: Add product to favorites              # file:///C:/Users/jayan/Desktop/Java_Selenium/browsestack/src/test/resources/Features/08favorites.feature:3
+Sep 07, 2025 11:29:40 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 140
+Sep 07, 2025 11:29:40 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 140.0.7339.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given user first logged in                  # browsestack.favorites.user_first_logged_in()
+  ✔ When user adds product to favorites         # browsestack.favorites.user_adds_product_to_favorites()
+Favorites displayed successfully
+  ✔ Then product should be visible in favorites # browsestack.favorites.product_should_be_visible_in_favorites()
+
+Scenario: Successful sign out                        # file:///C:/Users/jayan/Desktop/Java_Selenium/browsestack/src/test/resources/Features/09Signout.feature:3
+Sep 07, 2025 11:29:57 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 140
+Sep 07, 2025 11:29:57 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 140.0.7339.80. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+  ✔ Given user first log in                          # browsestack.signout.user_first_log_in()
+  ✔ When user clicks the sign out button             # browsestack.signout.user_clicks_the_sign_out_button()
+Signed out successfully
+  ✔ Then user should be redirected to the login page # browsestack.signout.user_should_be_redirected_to_the_login_page()
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 118.1 s -- in browsestack.TestRunner
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  02:01 min
+[INFO] Finished at: 2025-09-07T11:30:11+05:30
+[INFO] ------------------------------------------------------------------------
+Finished: SUCCESS
